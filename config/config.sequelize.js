@@ -2,11 +2,11 @@
 
 const equelize = {
     dialect :'mysql',
-    database:'douban_test',
+    database:'burn',
     host:'localhost',
     port:'3306',
-    username:'root',
-    password:'123456',
+    username:'tomorrow',
+    password:'willbefine',
 };
 
 module.exports = equelize;

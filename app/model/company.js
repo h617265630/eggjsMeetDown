@@ -16,7 +16,7 @@ module.exports = app =>{
         companyName:STRING(255),
         companyDescription:STRING(255),
     },{
-        tableName:'companies',
+        tableName:'company',
         timestamps:false,
     });
 

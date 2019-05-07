@@ -32,6 +32,14 @@ module.exports = appInfo => {
     app:true,
     agent:false,
   }
+  config.sequelize = {
+    dialect:'mysql',
+    host:'localhost',
+    port:'3306',
+    user:'tomorrow',
+    password:'willbefine',
+    database:'burn',
+  };
   config.view = {
     defaultViewEngine: 'nunjucks',
     mapping: {

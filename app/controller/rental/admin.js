@@ -19,6 +19,7 @@ class AdminController extends Controller {
 
         await this.ctx.render('admin/admin.html',{list:CompanyList});
     }
+
     // async roomList(){
     //     const {ctx} = this;
     //     const RoomList = await ctx.model.Room.findAll()
