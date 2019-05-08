@@ -1,4 +1,16 @@
 'use strict';
+// const Model = Sequelize.Model;
+// class User extends Model{}
+// User.init({
+//     id:{type:INTEGER,primaryKey:true,autoIncrement:true},
+//     name:STRING(30),
+//     age:INTEGER,
+//     created_at:DATE,
+//     updated_at:DATE,
+// },{
+//     sequelize,
+//     modelName:'user'
+// });
 
 module.exports = app =>{
     const {STRING,INTEGER,DATE} = app.Sequelize;
@@ -8,6 +20,10 @@ module.exports = app =>{
         age:INTEGER,
         created_at:DATE,
         updated_at:DATE,
+        },
+        {
+            tableName:'user',
+            timestampes:false
         });
     return User;
 }

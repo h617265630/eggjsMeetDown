@@ -1,6 +1,6 @@
 'use strict';
 
-const equelize = {
+const sequelize = {
     dialect :'mysql',
     database:'burn',
     host:'localhost',
@@ -9,6 +9,6 @@ const equelize = {
     password:'willbefine',
 };
 
-module.exports = equelize;
+module.exports = sequelize;
 
 

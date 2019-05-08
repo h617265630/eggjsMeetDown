@@ -7,6 +7,11 @@ class HomeController extends Controller {
     const { ctx } = this;
     ctx.body="hello rental";
   }
+  async list(){
+    const _ctx = this.ctx;
+    const room = await _ctx.model.Room.findAll();
+    _ctx.body = room;
+  }
 }
 
 module.exports = HomeController;

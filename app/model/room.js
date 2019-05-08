@@ -10,7 +10,7 @@
 
 module.exports = app =>{
     const {STRING,INTEGER,DATE} = app.Sequelize;
-    const room = app.model.define('room',{
+    const Room = app.model.define('room',{
         id:{
             type:INTEGER,
             primaryKey:true,
@@ -22,5 +22,5 @@ module.exports = app =>{
         timestamps:false,
     });
 
-    return room;
+    return Room;
 }
